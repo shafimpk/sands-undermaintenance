@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Site Under Maintenance | Real Estate Listings</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background-color: #fff;
+      color: #333;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      min-height: 100vh;
+      padding: 20px;
+    }
+
+    .logo {
+      width: 200px;
+      height: auto;
+      margin-bottom: 10px;
+      animation: fadeIn 1.5s ease-in-out;
+    }
+
+    .maintenance-icon {
+      font-size: 48px;
+      color: #797773;
+      margin-bottom: 20px;
+      animation: pulse 2s infinite;
+    }
+
+    h1 {
+      font-size: 1.6rem;
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-size: 1rem;
+      max-width: 400px;
+      margin: 0 auto 30px;
+      line-height: 1.5;
+    }
+
+    .contact-options {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      width: 100%;
+      max-width: 300px;
+      margin-bottom: 40px;
+    }
+
+    .contact-options a {
+      text-decoration: none;
+      color: #fff;
+      padding: 12px;
+      border-radius: 8px;
+      font-size: 1rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      transition: background-color 0.3s ease;
+    }
+
+    .call {
+      background-color: #4CAF50;
+    }
+
+    .call:hover {
+      background-color: #45a049;
+    }
+
+    .whatsapp {
+      background-color: #25D366;
+    }
+
+    .whatsapp:hover {
+      background-color: #20b954;
+    }
+
+    footer {
+      font-size: 0.85rem;
+      color: #888;
+      margin-top: auto;
+      text-align: center;
+    }
+
+    @keyframes pulse {
+      0% { transform: scale(1); }
+      50% { transform: scale(1.1); }
+      100% { transform: scale(1); }
+    }
+
+    @keyframes fadeIn {
+      0% { opacity: 0; transform: translateY(-10px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+
+    /* Responsive Adjustments */
+    @media (min-width: 600px) {
+      h1 {
+        font-size: 2rem;
+      }
+
+      p {
+        font-size: 1.1rem;
+      }
+
+      .maintenance-icon {
+        font-size: 60px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Logo -->
+  <img src="logo.jpeg" alt="Site Logo" class="logo" />
+
+  <!-- Animated Maintenance Icon -->
+  <div class="maintenance-icon">
+    <i class="fas fa-tools"></i>
+  </div>
+
+  <!-- Heading & Message -->
+  <h1>We're Under Maintenance</h1>
+  <p>Our website is temporarily unavailable. Please contact our team for any enquiries. We'll be back shortly!</p>
+
+  <!-- Contact Buttons -->
+  <div class="contact-options">
+    <a href="tel:+971507507559" class="call">
+      <i class="fas fa-phone"></i> Call Us
+    </a>
+    <a href="https://wa.me/971507507559" target="_blank" class="whatsapp">
+      <i class="fab fa-whatsapp"></i> WhatsApp
+    </a>
+  </div>
+
+  <footer>
+    &copy; 2025 S&S Real Estate. All rights reserved.
+  </footer>
+
+</body>
+</html>
